@@ -1,4 +1,81 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+    background-color: #ffff;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container, .result{
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    display: inline-block;   
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.result{
+    background-color: rgba(128, 128, 128, 0.308);
+}
+h1{
+    text-transform: uppercase;
+    color: rgb(39, 37, 160);
+    margin: auto;
+    width: 90%;
+    margin-bottom:10px ;
+}
+label{
+    display: block;
+    text-align:center;
+    margin:10px 0 5px 0;
+    text-transform: uppercase;
+}
+.input-style{
+    padding: 15px;
+    border: none;
+    border-bottom: 1px rgb(10, 39, 119) solid;
+    width: 70%;
+    font-size: medium;
+    color: rgb(10, 39, 119);
+    font-weight: bold;
+}
+.input-style:focus{
+    border: 1px rgb(10, 39, 119) solid !important;
+    border-radius: 10px;
+    outline: none;
+}
+.input-style::after{
+    font-size: medium;
+    color: rgb(10, 39, 119);
+    font-weight: bold;
+}
+main{
+    padding: 20px;
+    border: 1px rgba(10, 39, 119, 0.753) solid;
+    border-radius: 10px;
+}
+button{
+    background-color: rgb(10, 39, 119);
+    color: #ffff;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    outline: none;
+    border: #ffff 1px solid;
+    width: 50%;
+    border-radius: 10px;
+    font-size: medium;
+}
+span {
+    font-size: large;
+    font-weight: 400;
+    color: black;   
+}
+span span{
+    font-size: large;
+    font-weight: 600;
+    color: rgb(17, 27, 167);   
+}
 
 

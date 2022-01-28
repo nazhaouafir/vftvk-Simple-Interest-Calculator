@@ -1,16 +1,66 @@
-<html>
-    <head>
-    <script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyone Can Get Rich</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+<body>
+    <div class="result">
+         <header>
+        <h1>Result</h1>
+    </header>
+    <main>
+        <section>
+                <span>
+                  If you deposit <span id="amount">__.</span> 
+                  <br> at an interest rate of <span id="rate">____.</span>
+                  <br> You will receive an amount of <span id="result">____.</span> 
+                  <br> in the year <span id="in_year"> ___.</span>
+                </span>             
+        </section>
+    </main> 
+    </div>
+    <div class="container">
+         <header>
         <h1>Simple Interest Calculator</h1>
-
-        <!-- Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br> -->
-
-        <button onclick="compute()">Compute</button>
-    </body>
+    </header>
+    <main>
+        <section>
+            <form  method="post" onsubmit="compute()">
+                <div>
+                    <label for="">Amount</label>
+                    <input type="number" class="input-style" name="amount">
+                </div>
+                <div>
+                    <label for="">Rate</label>
+                    <input type="range" min="0" value="0" max="100" class="input-style" name="rate" >
+                </div>
+                <div>
+                    <label for="">No. Of Years</label>
+                    <select class="input-style" name="no_years" >
+                        <option value="0">Select No. of years</option>
+                        <option value="1">1</option>    
+                        <option value="2">2</option>    
+                        <option value="3">3</option>    
+                        <option value="4">4</option>    
+                        <option value="5">5</option>    
+                        <option value="6">6</option>    
+                        <option value="7">7</option>    
+                        <option value="8">8</option>    
+                        <option value="9">9</option>    
+                        <option value="10">10</option>    
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Computer interest</button>
+                </div>
+            </form>
+        </section>
+    </main> 
+    </div>
+     
+</body>
 </html>
